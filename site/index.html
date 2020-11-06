@@ -7,10 +7,9 @@
         <link rel="stylesheet" href="css/reset.css">
         <link rel="stylesheet" href="css/style.css">
         <title>Música</title>
-        <meta http-equiv="REFRESH" content="2;URL=’https://www.youtube.com/watch?v=NlprozGcs80&ab_channel=diemauerdk?autostart=true'">
     </head>
     <body>
-        <!-- <bgsound src="https://www.youtube.com/watch?v=NlprozGcs80&ab_channel=diemauerdk"></bgsound> -->
+        <embed id="musica" style="display:none;" src="musica/vivaldi-as-quatro-estacoes.mp3" autostart="true" loop="true" width="0" height="0">
         <div id="menu">
             <ul>
                 <li class="nav-item" id="item1">
@@ -25,8 +24,13 @@
                 <li class="nav-item" id="item4">
                     <a href="#playlist">PLAYLIST</a>
                 </li>
-                <li>
+                <li class="nav-item" id="item5">
                     <button id="btnLogin">LOGIN</button>
+                </li>
+                <li class="nav-item" id="item6">
+                    <button onclick="tocar()" id="btnPlay">
+                        <img src="img/nota-musical (2).png">
+                    </button>
                 </li>
             </ul>
         </div>
@@ -34,8 +38,12 @@
         <div class="header" id="banner">
             <div id="box-header">
                 <h2>MÚSICA</h2>
-                <h4>Desperta curiosidade, emoções e sentimentos</h4>
+                <h4>Desperta curiosidade, emoções e sentimentos. Se ouve com os ouvidos e escuta com a alma</h4>
+                <a href="#sobre">
+                    <button id="btn-sobre">saiba mais</button>
+                </a>
             </div>
+            <img id="gif-banner" src="img/gif1.gif">
         </div>
         <div id="sobre">
             <div class="container">
@@ -119,5 +127,11 @@
                 </div4>
             </div4>
         </div4>
+        <script type="text/javascript" async src="https://tenor.com/embed.js"></script>
+        <script>
+            function tocar(){
+                musica.style="display:block;"
+            }
+        </script>
     </body>
 </html>
