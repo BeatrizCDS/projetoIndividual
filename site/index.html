@@ -9,7 +9,10 @@
         <title>Música</title>
     </head>
     <body>
-        <embed id="musica" style="display:none;" src="musica/vivaldi-as-quatro-estacoes.mp3" autostart="true" loop="true" width="0" height="0">
+        <audio id="myAudio"         
+        src="musica/vivaldi-as-quatro-estacoes.mp3" preload="auto">
+        </audio>
+
         <div id="menu"><div id="logo"></div>
            <div id="navegacao">
             <ul>
@@ -123,88 +126,121 @@
 
                     <div class="play" id="play1">
                         <a href="#modal1">
-                            <div class="top-number" id="top-number1">
+                            <div class="top-number" id="top-number1" onclick="tocar1()">
                                 <h4>1</h4>
                                 <h6 class="top_txt_primary">Love of my life</h6>
                                 <p class="top_txt_secondary">Queen</p>
                             </div>
                         </a>
+                        <audio id="musica1"         
+                        src="musica/love-of-my-life-lyrics.mp3" preload="auto">
+                        </audio>
+
                         <a href="#modal2">
-                            <div class="top-number" id="top-number2">
+                            <div class="top-number" id="top-number2" onclick="tocar2()">
                                 <h4>2</h4>
                                 <h6 class="top_txt_primary">Rancho Fundo</h6>
-                                <p class="top_txt_secondary">César Menotti & Fabiano</p>
+                                <p class="top_txt_secondary">Chitãozinho & Xororó</p>
                             </div>
                         </a>
+                        <audio id="musica2"         
+                        src="musica/no-rancho-fundo.mp3" preload="auto">
+                        </audio>
+
                         <a href="#modal3">
-                            <div class="top-number" id="top-number3">
+                            <div class="top-number" id="top-number3" onclick="tocar3()">
                                 <h4>3</h4>
                                 <h6 class="top_txt_primary">Oceano</h6>
                                 <p class="top_txt_secondary">Djavan</p>
                             </div> 
                         </a>
-                       <a href="#modal4">
-                        <div class="top-number" id="top-number4">
-                            <h4>4</h4>
-                            <h6 class="top_txt_primary">Sozinho</h6>
-                            <p class="top_txt_secondary">Caetano veloso</p>
-                        </div> 
-                       </a>
+                        <audio id="musica3"         
+                        src="musica/10convert.com_Djavan-Oceano-Ao-Vivo_-smnxqSTv4Y.mp3" preload="auto">
+                        </audio>
+
+                        <a href="#modal4">
+                            <div class="top-number" id="top-number4" onclick="tocar4()">
+                                <h4>4</h4>
+                                <h6 class="top_txt_primary">Sozinho</h6>
+                                <p class="top_txt_secondary">Caetano veloso</p>
+                            </div> 
+                        </a>
+                        <audio id="musica4"         
+                        src="musica/10convert.com_Sozinho-Caetano-Veloso-estudio_sGC8g0DJ0_E.mp3" preload="auto">
+                        </audio>
+
                         <a href="#modal5">
-                            <div class="top-number" id="top-number5">
+                            <div class="top-number" id="top-number5" onclick="tocar5()">
                                 <h4>5</h4>
                                 <h6 class="top_txt_primary">La vie en rose</h6>
                                 <p class="top_txt_secondary">Edith Piaf</p>
                             </div> 
-                        </a>                      
+                        </a>    
+                        <audio id="musica5"         
+                        src="musica/10convert.com_Edith-Piaf-La-vie-en-rose-French-and-English-Lyric_kN1WoneA1Kw.mp3" preload="auto">
+                        </audio>                  
                     </div>
 
                     <div class="play" id="play2">
                         <a href="#modal6">
-                            <div class="top-number" id="top-number6">
+                            <div class="top-number" id="top-number6" onclick="tocar6()">
                                 <h4>6</h4>
                                 <h6 class="top_txt_primary">Don't stop me now</h6>
                                 <p class="top_txt_secondary">Queen</p>
                             </div> 
                         </a>
+                        <audio id="musica6"         
+                        src="musica/10convert.com_Queen-Dont-Stop-Me-Now-Lyrics_KKny_ia8Fvo.mp3" preload="auto">
+                        </audio>
+
                         <a href="#modal7">
                             <div class="top-number" id="top-number7">
                                 <h4>7</h4>
-                                <h6 class="top_txt_primary">I surrender</h6>
-                                <p class="top_txt_secondary">Hilssong</p>
+                                <h6 class="top_txt_primary">9° sinfonia</h6>
+                                <p class="top_txt_secondary">Beethoven</p>
                             </div>
                         </a>
                         <a href="#modal8">
                             <div class="top-number" id="top-number8">
                                 <h4>8</h4>
-                                <h6 class="top_txt_primary">Oceans</h6>
-                                <p class="top_txt_secondary">QueHilssongen</p>
+                                <h6 class="top_txt_primary">Vivaldi</h6>
+                                <p class="top_txt_secondary">Beethoven</p>
                             </div>
                         </a>
                         <a href="#modal9">
-                            <div class="top-number" id="top-number9">
+                            <div class="top-number" id="top-number9" onclick="tocar9()">
                                 <h4>9</h4>
                                 <h6 class="top_txt_primary">A whole new world</h6>
                                 <p class="top_txt_secondary">Alladin</p>
                             </div> 
                         </a>
+                        <audio id="musica9"         
+                        src="musica/10convert.com_A-Whole-New-World-Aladdin-1080-HD-with-lyrics_aeDYx7Tkc7I.mp3" preload="auto">
+                        </audio>
+
                         <a href="#modal10">
-                            <div class="top-number" id="top-number10">
+                            <div class="top-number" id="top-number10" onclick="tocar10()">
                                 <h4>10</h4>
                                 <h6 class="top_txt_primary">When you wish upon a star</h6>
                                 <p class="top_txt_secondary">Pinocchio</p>
                             </div> 
                         </a>
+                        <audio id="musica10"         
+                        src="musica/10convert.com_When-You-Wish-Upon-A-Star-Pinocchio-lyrics_zXEy9hyIjh8.mp3" preload="auto">
+                        </audio>
                     </div>
 
                     <div class="play" id="play3">
-                        <div class="top-cinco" id="top-cinco1">
-                            <div class="circulo" id="circulo1"></div>
-                            <div class="top-text" id="top-text1">
-                                <h6>Caetano Veloso</h6>
-                                <p>Mpb</p>
+                        <a href="#modal11">
+                            <div class="top-cinco" id="top-cinco1">
+                                <div class="circulo" id="circulo1"></div>
+                                <div class="top-text" id="top-text1">
+                                    <h6>Caetano Veloso</h6>
+                                    <p>Mpb</p>
+                                </div>
                             </div>
-                        </div>
+                        </a>
+                       <a href="#modal12">
                         <div class="top-cinco" id="top-cinco2">
                             <div class="circulo" id="circulo2"></div>
                             <div class="top-text" id="top-text2">
@@ -212,20 +248,26 @@
                                 <p>Mpb</p>
                             </div>
                         </div>
-                        <div class="top-cinco" id="top-cinco3">
-                            <div class="circulo" id="circulo3"></div>
-                            <div class="top-text" id="top-text3">
-                                <h6>Hilsong</h6>
-                                <p>Gospel</p>
+                       </a>
+                        <a href="#modal13">
+                            <div class="top-cinco" id="top-cinco3">
+                                <div class="circulo" id="circulo3"></div>
+                                <div class="top-text" id="top-text3">
+                                    <h6>Hilsong</h6>
+                                    <p>Gospel</p>
+                                </div>
                             </div>
-                        </div>
-                        <div class="top-cinco" id="top-cinco4">
-                            <div class="circulo" id="circulo4"></div>
-                            <div class="top-text" id="top-text4">
-                                <h6>Chitãonzinho & Xororó</h6>
-                                <p>Sertanejo</p>
+                        </a>
+                        <a href="#modal14">
+                            <div class="top-cinco" id="top-cinco4">
+                                <div class="circulo" id="circulo4"></div>
+                                <div class="top-text" id="top-text4">
+                                    <h6>Chitãonzinho & Xororó</h6>
+                                    <p>Sertanejo</p>
+                                </div>
                             </div>
-                        </div>
+                        </a>
+                       <a href="#modal15">
                         <div class="top-cinco" id="top-cinco5">
                             <div class="circulo" id="circulo5"></div>
                             <div class="top-text" id="top-text5">
@@ -233,6 +275,7 @@
                                 <p>Infantil</p>
                             </div>
                         </div>
+                       </a>
                     </div>
                 </div>
             </div>
@@ -242,7 +285,7 @@
         <div class="modal" id="modal1" tabindex="-1">
             <a href="#" class="modal_overlay" aria-label="Fechar"></a>
             <div class="modal_content">
-                <a href="#playlist" class="modal_close" aria-label="Fechar">x</a>
+                <a href="#playlist" class="modal_close" aria-label="Fechar" onclick="parar1()">x</a>
                 <div id="modal-body">
                     <h4>Love of my life</h4>
                     <h6>Queen</h6>
@@ -288,15 +331,18 @@
                             Yeah
                         </p>
                     </div>
+                    
                 </div>
+                
             </div>
+            
         </div>
 
         <!-- MUSICA 2 -->
         <div class="modal" id="modal2" tabindex="-1">
             <a href="#" class="modal_overlay" aria-label="Fechar"></a>
             <div class="modal_content">
-                <a href="#playlist" class="modal_close" aria-label="Fechar">x</a>
+                <a href="#playlist" class="modal_close" aria-label="Fechar" onclick="parar2()">x</a>
                 <div id="modal-body">
                     <h4>Rancho fundo</h4>
                     <h6>César Menotti e Fabiano</h6>
@@ -372,7 +418,7 @@
         <div class="modal" id="modal3" tabindex="-1">
             <a href="#" class="modal_overlay" aria-label="Fechar"></a>
             <div class="modal_content">
-                <a href="#playlist" class="modal_close" aria-label="Fechar">x</a>
+                <a href="#playlist" class="modal_close" aria-label="Fechar" onclick="parar3()">x</a>
                 <div id="modal-body">
                     <h4>Oceano</h4>
                     <h6>Djavan</h6>
@@ -412,7 +458,7 @@
         <div class="modal" id="modal4" tabindex="-1">
             <a href="#" class="modal_overlay" aria-label="Fechar"></a>
             <div class="modal_content">
-                <a href="#playlist" class="modal_close" aria-label="Fechar">x</a>
+                <a href="#playlist" class="modal_close" aria-label="Fechar" onclick="parar4()">x</a>
                 <div id="modal-body">
                     <h4>Sozinho</h4>
                     <h6>Caetano Veloso</h6>
@@ -467,7 +513,7 @@
         <div class="modal" id="modal5" tabindex="-1">
             <a href="#" class="modal_overlay" aria-label="Fechar"></a>
             <div class="modal_content">
-                <a href="#playlist" class="modal_close" aria-label="Fechar">x</a>
+                <a href="#playlist" class="modal_close" aria-label="Fechar" onclick="parar5()">x</a>
                 <div id="modal-body">
                     <h4>La vie en rose</h4>
                     <h6>Edith Piaf</h6>
@@ -534,14 +580,419 @@
             </div>
         </div>
 
+        <!-- MUSICA 6 -->
+        <div class="modal" id="modal6" tabindex="-1">
+            <a href="#" class="modal_overlay" aria-label="Fechar"></a>
+            <div class="modal_content">
+                <a href="#playlist" class="modal_close" aria-label="Fechar" onclick="parar6()">x</a>
+                <div id="modal-body">
+                    <h4>Don't stop me now</h4>
+                    <h6>Queen</h6>
+                    <div id="modal-conteudo1">
+                        <p><br>
+                            Tonight I'm gonna have myself a real good time<br>
+                            I feel alive<br>
+                            And the world, I'll turn it inside out, yeah!<br>
+                            I'm floating around in ecstasy<br>
+                            So don't stop me now<br>
+                            Don't stop me<br><br>
+                            
+                            'Cause I'm having a good time, having a good time<br>
+                            I'm a shooting star leaping through the sky<br>
+                            Like a tiger defying the laws of gravity<br>
+                            I'm a racing car passing by, like Lady Godiva<br>
+                            I'm gonna go, go, go<br>
+                            There's no stopping me<br>
+                            I'm burning through the sky, yeah!<br>
+                            Two hundred degrees<br>
+                            That's why they call me Mister Fahrenheit<br>
+                            I'm travelling at the speed of light<br>
+                            I wanna make a supersonic man out of you<br><br>
+                            
+                            Don't stop me now
+                            I'm having such a good time<br>
+                            I'm having a ball
+                            Don't stop me now<br>
+                            If you wanna have a good time, just give me a call<br>
+                            Don't stop me now ('cause I'm havin' a good time)<br>
+                            Don't stop me now (yes, I'm havin' a good time)<br>
+                            I don't wanna stop at all<br><br>
+                            
+                            I'm a rocket ship on my way to Mars<br>
+                            On a collision course<br>
+                            I am a satellite, I'm out of control<br>
+                        </p>                        
+                    </div>
+
+                    <div id="modal-conteudo2">
+                        <p><br>
+                            I am a sex machine ready to reload<br>
+                            Like an atom bomb about to<br>
+                            Oh, oh, oh, oh, oh, explode<br><br>
+                            
+                            I'm burning through the sky, yeah!<br>
+                            Two hundred degrees<br>
+                            That's why they call me Mister Fahrenheit<br>
+                            I'm travelling at the speed of light<br>
+                            I wanna make a supersonic woman of you<br><br>
+                            
+                            Don't stop me, don't stop me, don't stop me<br>
+                            Hey, hey, hey<br>
+                            Don't stop me, don't stop me, ooh, ooh, ooh<br>
+                            I like it<br>
+                            Don't stop me, don't stop me<br>
+                            Have a good time, good time<br>
+                            Don't stop me, don't stop me<br><br>
+                            
+                            Ooh, I'm burning through the sky, yeah!<br>
+                            Two hundred degrees<br>
+                            That's why they call me Mister Fahrenheit<br>
+                            I'm travelling at the speed of light<br>
+                            I wanna make a supersonic man out of you<br><br>
+                            
+                            Don't stop me now<br>
+                            I'm having such a good time<br>
+                            I'm having a ball<br>
+                            Don't stop me now<br>
+                            If you wanna have a good time, just give me a call<br>
+                            Don't stop me now ('cause I'm havin' a good time)<br>
+                            Don't stop me now (yes, I'm havin' a good time)<br>
+                            I don't wanna stop at all
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- MUSICA 7 -->
+        <div class="modal" id="modal7" tabindex="-1">
+            <a href="#" class="modal_overlay" aria-label="Fechar"></a>
+            <div class="modal_content">
+                <a href="#playlist" class="modal_close" aria-label="Fechar">x</a>
+                <div id="modal-body">
+                    <h4>9°Sinfonia</h4>
+                    <h6>Beethoven/h6>
+                    <video src="img/Beethoven-9ª-Sinfonia-Ode-a-Alegria - 10Convert.com.mp4" width="100%" height="70%" poster="img/posterBet1.png" controls></video>
+
+<!-- <video src="img/VID-20191221-WA0025.mp4" width=”350″ height=”100″ poster="img/teste.png" controls> </video> -->
+
+                </div>
+            </div>
+        </div>
+
+        <!-- MUSICA 8 -->
+        <div class="modal" id="modal8" tabindex="-1">
+            <a href="#" class="modal_overlay" aria-label="Fechar"></a>
+            <div class="modal_content">
+                <a href="#playlist" class="modal_close" aria-label="Fechar">x</a>
+                <div id="modal-body">
+                    <h4>Vivaldi</h4>
+                    <h6>Beethoven</h6>
+                    <video src="img/Primavera-Vivaldi-As-quatro-estações - 10Convert.com.mp4" width="100%" height="70%" poster="img/posterBet2.png" controls></video>
+                </div>
+            </div>
+        </div>
+
+        <!-- MUSICA 9 -->
+        <div class="modal" id="modal9" tabindex="-1">
+            <a href="#" class="modal_overlay" aria-label="Fechar"></a>
+            <div class="modal_content">
+                <a href="#playlist" class="modal_close" aria-label="Fechar" onclick="parar9()">x</a>
+                <div id="modal-body">
+                    <h4>A whole new world</h4>
+                    <h6>Disney</h6>
+                    <div id="modal-conteudo1">
+                        <p><br>
+                            I can show you the world<br>
+                            Shining, shimmering, splendid<br>
+                            Tell me, princess, now when did<br>
+                            You last let your heart decide?<br><br>
+
+                            I can open your eyes<br>
+                            Take you wonder by wonder<br>
+                            Over, sideways and under<br>
+                            On a magic carpet ride<br><br>
+
+                            A whole new world<br>
+                            A new fantastic point of view<br>
+                            No one to tell us no<br>
+                            Or where to go<br>
+                            Or say we're only dreaming<br><br>
+
+                            A whole new world<br>
+                            A dazzling place I never knew<br>
+                            But when I'm away up here<br>
+                            It's crystal clear<br>
+                            That now I'm in a whole new world with you<br>
+                            Now I'm in a whole new world with you<br>
+                        </p>                        
+                    </div>
+
+                    <div id="modal-conteudo2">
+                        <p><br>
+                            Unbelievable sights<br>
+                            Indescribable feeling<br>
+                            Soaring, tumbling, freewheeling<br>
+                            Through an endless diamond sky<br><br>
+
+                            A whole new world<br>
+                            (Don't you dare close your eyes)<br>
+                            A hundred thousand things to see<br>
+                            (Hold your breath, it gets better)<br>
+                            I'm like a shooting star<br>
+                            I've come so far<br>
+                            I can't go back to where I used to be<br><br>
+
+                            A whole new world<br>
+                            (Every turn a surprise)<br>
+                            With new horizons to pursue<br>
+                            (Every moment red-letter)<br>
+                            I'll chase them anywhere<br>
+                            There's time to spare
+                            Let me share this whole new world with you<br><br>
+
+                            A whole new world<br>
+                            (A whole new world)<br>
+                            That's where we'll be<br>
+                            (That's where we'll be)<br>
+                            A thrilling chase<br>
+                            (A wondrous place)<br>
+                            For you and me
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+         <!-- MUSICA 10 -->
+         <div class="modal" id="modal10" tabindex="-1">
+            <a href="#" class="modal_overlay" aria-label="Fechar"></a>
+            <div class="modal_content">
+                <a href="#playlist" class="modal_close" aria-label="Fechar" onclick="parar10()">x</a>
+                <div id="modal-body">
+                    <h4>When wish a upon a start</h4>
+                    <h6>Disney</h6>
+                    <div id="modal-conteudo1">
+                        <p><br>
+                            When you wish upon a star<br>
+                            Makes no difference who you are<br>
+                            Anything your heart desires<br>
+                            Will come to you<br><br>
+
+                            If your heart is in your dream<br>
+                            No request is too extreme<br>
+                            When you wish upon a star<br>
+                            As dreamers do
+                        </p>                        
+                    </div>
+
+                    <div id="modal-conteudo2">
+                        <p><br>
+                            Fate is kind<br>
+                            She brings to those who love<br>
+                            The sweet fulfillment of<br>
+                            Their secret longing<br><br>
+
+                            Like a bolt out of the blue<br>
+                            Fate steps in and sees you through<br>
+                            When you wish upon a star<br>
+                            Your dreams come true
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- MODAL 11 -->
+        <div class="modal" id="modal11" tabindex="-1">
+            <a href="#" class="modal_overlay" aria-label="Fechar"></a>
+            <div class="modal_content">
+                <a href="#playlist" class="modal_close" aria-label="Fechar">x</a>
+                <div id="modal-body">
+                    <h4>Caetano Veloso</h4>
+                    <br><br>
+                    <p>
+                         Acho que o que Caetano canta inspira quanlquer um!
+                        As músicas dele são únicas, falam de uma forma mágica
+                        comigo, e eu me emociono toda vez que as escuto.
+                        Tenho como minhas preferidas <i>Você não me ensinou a te esquecer</i>e <i>Sozinho</i>.
+                        <br><br>São músicas que sem sombra de dúvidas, enriquecem a cultura brasileira ainda mais. Caetano Veloso é um ícone, uma figura representativa do Brasil que claramente transparece a riqueza que nosso país possui em música.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- MODAL 12 -->
+        <div class="modal" id="modal12" tabindex="-1">
+            <a href="#" class="modal_overlay" aria-label="Fechar"></a>
+            <div class="modal_content">
+                <a href="#playlist" class="modal_close" aria-label="Fechar">x</a>
+                <div id="modal-body">
+                    <h4>Djavan</h4>
+                    <br><br>
+                    <p>
+                        Outro músico, compositor e poeta é o Djavan, ele canta com a alma e acende um sentimento de felicidade, pureza e alegria com suas músicas. Ele é uma inspiração para mim, o violão em suas mãos se torna um brinquedo, as cordas dançam enquanto ele dedilha e é um verdadeiro espetáculo.
+                        <br><br>
+                        Todo o sentimento que ele agrega as suas músicas é contagiante, a pegada que ele possui é marca registrada do próprio e sem dúvidas enriquece nossa cultura, deixando-a mais bela a cada dia.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- MODAL 13 -->
+        <div class="modal" id="modal13" tabindex="-1">
+            <a href="#" class="modal_overlay" aria-label="Fechar"></a>
+            <div class="modal_content">
+                <a href="#playlist" class="modal_close" aria-label="Fechar">x</a>
+                <div id="modal-body">
+                    <h4>Beethoven</h4>
+                    <br><br>
+                    <p>
+                        Ludwig van Beethoven é um gênio, compositor do século XVIII. Suas melódias são obras primas, toca os corações, causa sentimentos na alma e é a melhor definição quando se diz que a música é a arte e o som de manifestar os diversos afetos da nossa alma, mediante o som. 
+                        <br><br>
+                        Quando ouço melódias como <i>Vivaldi, 9°Sinfonia, 5°Sinfonia, fur elise e moonlight</i> sinto uma enorme motivação para a vida, as canções de Beethoven são uma inspiração, é como se a vida fosse mais bela e simples. É completamente mágico como um som pode te fazer se sentir vivo.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <!-- MODAL 14 -->
+        <div class="modal" id="modal14" tabindex="-1">
+            <a href="#" class="modal_overlay" aria-label="Fechar"></a>
+            <div class="modal_content">
+                <a href="#playlist" class="modal_close" aria-label="Fechar">x</a>
+                <div id="modal-body">
+                    <h4>Chitãonzinho & Xororó/h4>
+                    <br><br>
+                    <p>
+                        Essa dupla sertaneja marca o Brasil há 50 anos, é difícil não se emocionar com o sucesso <i>Evidências, No Rancho Fundo e Fogão de Lenha</i> e com outras músicas que essa dupla canta tão bem.<br><br>
+                        O valor que essa dupla tem para eu é importante, me faz viajar em um passado que eu não vivi, mas que na minha imaginação é romântico.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <!-- MODAL 15 -->
+        <div class="modal" id="modal15" tabindex="-1">
+            <a href="#" class="modal_overlay" aria-label="Fechar"></a>
+            <div class="modal_content">
+                <a href="#playlist" class="modal_close" aria-label="Fechar">x</a>
+                <div id="modal-body">
+                    <h4>Disney</h4>
+                    <br><br>
+                    <p>
+                        A trilha sonora de filmes da disney é incrível, impossível nunca alguém ter se emocionado alguma música, como por exemplo o tema de Pinocchio que se tornou tema de abertura e ganhou prêmios como o Oscar de melhor canção original.
+                        <br><br>
+                        Além do peso que são os filmes da disney, suas músicas são de impressionar, e por isso mexem comigo, me remete aos tempos da infância e me faz enxergar com outros olhos aquele tempo e como foi bom e gratificante.
+                    </p>
+                </div>
+            </div>
+        </div>
+
         <footer>
             <p>Desenvolvido com carinho por Beatriz Campos</p>
-            <p>Copyright© 2020</p>
+            <p>Copyright © 2020</p>
         </footer>
         <script type="text/javascript" async src="https://tenor.com/embed.js"></script>
+        
         <script>
-            function tocar(){
-                musica.style="display:block;"
+            var myAudio= document.getElementById("myAudio");
+            var musica1= document.getElementById("musica1");
+            var musica2= document.getElementById("musica2");
+            var musica3= document.getElementById("musica3");
+            var musica4= document.getElementById("musica4");
+            var musica5= document.getElementById("musica5");
+            var musica6= document.getElementById("musica6");
+            var musica9= document.getElementById("musica9");
+            var musica10= document.getElementById("musica10");
+            var isPlaying = false;
+
+            function tocar() {
+                if (isPlaying) {
+                    myAudio.pause()
+                } 
+                else {
+                    myAudio.play();
+                }
+                };
+                myAudio.onplaying = function() {
+                isPlaying = true;
+                };
+                myAudio.onpause = function() {
+                isPlaying = false;
+            };
+            // musica 1
+            function tocar1(){
+                musica1.play();
+            }
+            
+            function parar1() {
+                musica1.currentTime = 0;
+                musica1.pause()
+            }
+
+            //    musica 2 
+            function tocar2(){
+                musica2.play();
+            }
+            
+            function parar2() {
+                musica2.currentTime = 0;
+                musica2.pause()
+            }
+
+            //    musica 3 
+            function tocar3(){
+                musica3.play();
+            }
+            
+            function parar3() {
+                musica3.currentTime = 0;
+                musica3.pause()
+            }
+             //    musica 4
+             function tocar4(){
+                musica4.play();
+            }
+            
+            function parar4() {
+                musica4.currentTime = 0;
+                musica4.pause()
+            }
+             //    musica 5 
+             function tocar5(){
+                musica5.play();
+            }
+            
+            function parar5() {
+                musica5.currentTime = 0;
+                musica5.pause()
+            }
+             //    musica 6 
+             function tocar6(){
+                musica6.play();
+            }
+            
+            function parar6() {
+                musica6.currentTime = 0;
+                musica6.pause()
+            }
+             //    musica 9 
+             function tocar9(){
+                musica9.play();
+            }
+            
+            function parar9() {
+                musica9.currentTime = 0;
+                musica9.pause()
+            }
+
+             //    musica 10 
+             function tocar10(){
+                musica10.play();
+            }
+            
+            function parar10() {
+                musica10.currentTime = 0;
+                musica10.pause()
             }
         </script>
     </body>
