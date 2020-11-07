@@ -10,7 +10,8 @@
     </head>
     <body>
         <embed id="musica" style="display:none;" src="musica/vivaldi-as-quatro-estacoes.mp3" autostart="true" loop="true" width="0" height="0">
-        <div id="menu">
+        <div id="menu"><div id="logo"></div>
+           <div id="navegacao">
             <ul>
                 <li class="nav-item" id="item1">
                     <a href="#banner">HOME</a>
@@ -33,6 +34,7 @@
                     </button>
                 </li>
             </ul>
+           </div>
         </div>
 
         <div class="header" id="banner">
@@ -116,17 +118,426 @@
         <div><br><br><br><br>
             <div id="playlist">
                 <div id="container3">
-                    <h1>Minha<span> Playslist</span></h1>
+                    <h1>Mais<span> Ouvidas</span></h1>
                     <br><br><br>
-                    <div id="group-btn">
-                        <button class="btn-play" id="btn1" onclick="ver1()">Clássica</button>
-                        <button class="btn-play" id="btn2" onclick="ver2()">MPB</button>
-                        <button class="btn-play" id="btn3" onclick="ver3()">Sertanejo</button>
-                        <button class="btn-play" id="btn4" onclick="ver4()">Pop</button>
+
+                    <div class="play" id="play1">
+                        <a href="#modal1">
+                            <div class="top-number" id="top-number1">
+                                <h4>1</h4>
+                                <h6 class="top_txt_primary">Love of my life</h6>
+                                <p class="top_txt_secondary">Queen</p>
+                            </div>
+                        </a>
+                        <a href="#modal2">
+                            <div class="top-number" id="top-number2">
+                                <h4>2</h4>
+                                <h6 class="top_txt_primary">Rancho Fundo</h6>
+                                <p class="top_txt_secondary">César Menotti & Fabiano</p>
+                            </div>
+                        </a>
+                        <a href="#modal3">
+                            <div class="top-number" id="top-number3">
+                                <h4>3</h4>
+                                <h6 class="top_txt_primary">Oceano</h6>
+                                <p class="top_txt_secondary">Djavan</p>
+                            </div> 
+                        </a>
+                       <a href="#modal4">
+                        <div class="top-number" id="top-number4">
+                            <h4>4</h4>
+                            <h6 class="top_txt_primary">Sozinho</h6>
+                            <p class="top_txt_secondary">Caetano veloso</p>
+                        </div> 
+                       </a>
+                        <a href="#modal5">
+                            <div class="top-number" id="top-number5">
+                                <h4>5</h4>
+                                <h6 class="top_txt_primary">La vie en rose</h6>
+                                <p class="top_txt_secondary">Edith Piaf</p>
+                            </div> 
+                        </a>                      
                     </div>
-                </div4>
-            </div4>
-        </div4>
+
+                    <div class="play" id="play2">
+                        <a href="#modal6">
+                            <div class="top-number" id="top-number6">
+                                <h4>6</h4>
+                                <h6 class="top_txt_primary">Don't stop me now</h6>
+                                <p class="top_txt_secondary">Queen</p>
+                            </div> 
+                        </a>
+                        <a href="#modal7">
+                            <div class="top-number" id="top-number7">
+                                <h4>7</h4>
+                                <h6 class="top_txt_primary">I surrender</h6>
+                                <p class="top_txt_secondary">Hilssong</p>
+                            </div>
+                        </a>
+                        <a href="#modal8">
+                            <div class="top-number" id="top-number8">
+                                <h4>8</h4>
+                                <h6 class="top_txt_primary">Oceans</h6>
+                                <p class="top_txt_secondary">QueHilssongen</p>
+                            </div>
+                        </a>
+                        <a href="#modal9">
+                            <div class="top-number" id="top-number9">
+                                <h4>9</h4>
+                                <h6 class="top_txt_primary">A whole new world</h6>
+                                <p class="top_txt_secondary">Alladin</p>
+                            </div> 
+                        </a>
+                        <a href="#modal10">
+                            <div class="top-number" id="top-number10">
+                                <h4>10</h4>
+                                <h6 class="top_txt_primary">When you wish upon a star</h6>
+                                <p class="top_txt_secondary">Pinocchio</p>
+                            </div> 
+                        </a>
+                    </div>
+
+                    <div class="play" id="play3">
+                        <div class="top-cinco" id="top-cinco1">
+                            <div class="circulo" id="circulo1"></div>
+                            <div class="top-text" id="top-text1">
+                                <h6>Caetano Veloso</h6>
+                                <p>Mpb</p>
+                            </div>
+                        </div>
+                        <div class="top-cinco" id="top-cinco2">
+                            <div class="circulo" id="circulo2"></div>
+                            <div class="top-text" id="top-text2">
+                                <h6>Djavan</h6>
+                                <p>Mpb</p>
+                            </div>
+                        </div>
+                        <div class="top-cinco" id="top-cinco3">
+                            <div class="circulo" id="circulo3"></div>
+                            <div class="top-text" id="top-text3">
+                                <h6>Hilsong</h6>
+                                <p>Gospel</p>
+                            </div>
+                        </div>
+                        <div class="top-cinco" id="top-cinco4">
+                            <div class="circulo" id="circulo4"></div>
+                            <div class="top-text" id="top-text4">
+                                <h6>Chitãonzinho & Xororó</h6>
+                                <p>Sertanejo</p>
+                            </div>
+                        </div>
+                        <div class="top-cinco" id="top-cinco5">
+                            <div class="circulo" id="circulo5"></div>
+                            <div class="top-text" id="top-text5">
+                                <h6>Disney</h6>
+                                <p>Infantil</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- MUSICA1 -->
+        <div class="modal" id="modal1" tabindex="-1">
+            <a href="#" class="modal_overlay" aria-label="Fechar"></a>
+            <div class="modal_content">
+                <a href="#playlist" class="modal_close" aria-label="Fechar">x</a>
+                <div id="modal-body">
+                    <h4>Love of my life</h4>
+                    <h6>Queen</h6>
+                    <div id="modal-conteudo1">
+                        <p><br>Love of my life, you've hurt me<br>
+                            You've broken my heart<br>
+                            And now you leave me<br><br>
+                            
+                            Love of my life, can't you see?<br>
+                            Bring it back, bring it back<br>
+                            Don't take it away from me<br>
+                            Because you don't know<br>
+                            What it means to me<br><br>
+                            
+                            Love of my life, don't leave me<br>
+                            You've taken my love<br>
+                            And now desert me<br><br>
+                            Love of my life, can't you see?<br>
+                            Bring it back, bring it back<br>
+                        </p>                        
+                    </div>
+
+                    <div id="modal-conteudo2">
+                        <p><br>
+                            Don't take it away from me<br>
+                            Because you don't know<br>
+                            What it means to me<br><br>
+                            
+                            You will remember <br>
+                            When this is blown over<br>
+                            And everything's all by the way<br>
+                            When I grow older<br>
+                            I will be there at your side<br>
+                            To remind you how I still love you <br>
+                            I still love you<br><br>
+                            
+                            Hurry back, hurry back<br>
+                            Please bring it back home to me<br>
+                            Because you don't know<br>
+                            What it means to me<br>
+                            Love of my life<br>
+                            Love of my life<br>
+                            Yeah
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- MUSICA 2 -->
+        <div class="modal" id="modal2" tabindex="-1">
+            <a href="#" class="modal_overlay" aria-label="Fechar"></a>
+            <div class="modal_content">
+                <a href="#playlist" class="modal_close" aria-label="Fechar">x</a>
+                <div id="modal-body">
+                    <h4>Rancho fundo</h4>
+                    <h6>César Menotti e Fabiano</h6>
+                    <div id="modal-conteudo1">
+                        <p><br>
+                            No rancho fundo<br>
+                            Bem pra lá do fim do mundo<br>
+                            Onde a dor e a saudade<br>
+                            Contam coisas da cidade<br><br>
+
+                            No rancho fundo<br>
+                            De olhar triste e profundo<br>
+                            Um moreno canta as mágoas<br>
+                            Tendo os olhos rasos d'água<br><br>
+
+                            Pobre moreno que de noite no sereno<br>
+                            Espera a Lua no terreiro<br>
+                            Tendo um cigarro por companheiro<br><br>
+
+                            Sem um aceno<br>
+                            Ele pega na viola<br>
+                            E a Lua por esmola<br>
+                            Vem pro quintal desse moreno<br><br>
+
+                            No rancho fundo<br>
+                            Bem pra lá do fim do mundo<br>
+                            Nunca mais houve alegria<br>
+                            Nem de noite, nem de dia<br><br>
+
+                            Os arvoredos já não contam mais segredos<br>
+                            E a última palmeira<br>
+                            Já morreu na cordilheira                           
+                        </p>                        
+                    </div>
+
+                    <div id="modal-conteudo2">
+                        <p><br>
+                            Os passarinhos<br>
+                            Hibernaram-se nos ninhos<br>
+                            De tão triste esta tristeza<br>
+                            Enche de trevas a natureza<br><br>
+
+                            Tudo porque, só por causa do moreno<br>
+                            Que era grande, hoje é pequeno<br>
+                            Pra uma casa de sapê<br><br>
+
+                            Se Deus soubesse<br>
+                            Da tristeza lá na serra<br>
+                            Mandaria lá pra cima<br>
+                            Todo o amor que há na terra<br><br>
+
+                            Porque o moreno<br>
+                            Vive louco de saudade<br>
+                            Só por causa do veneno<br>
+                            Das mulheres da cidade<br><br>
+
+                            Ele que era<br>
+                            O cantor da primavera<br>
+                            E que fez do rancho fundo<br>
+                            O céu melhor que tem no mundo<br><br>
+
+                            Se uma flor desabrocha<br>
+                            E o Sol queima<br>
+                            A montanha vai gelando<br>
+                            Lembra o cheiro da morena
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- MUSICA 3 -->
+        <div class="modal" id="modal3" tabindex="-1">
+            <a href="#" class="modal_overlay" aria-label="Fechar"></a>
+            <div class="modal_content">
+                <a href="#playlist" class="modal_close" aria-label="Fechar">x</a>
+                <div id="modal-body">
+                    <h4>Oceano</h4>
+                    <h6>Djavan</h6>
+                    <div id="modal-conteudo1">
+                        <p><br>
+                            Assim que o dia amanheceu<br>
+                            Lá no mar alto da paixão<br>
+                            Dava pra ver o tempo ruir<br>
+                            Cadê você? Que solidão!<br>
+                            Esquecera de mim?<br><br>
+
+                            Enfim, de tudo o que há na Terra<br>
+                            Não há nada em lugar nenhum<br>
+                            Que vá crescer sem você chegar<br>
+                            Longe de ti tudo parou<br>
+                            Ninguém sabe o que eu sofri                   
+                        </p>                        
+                    </div>
+
+                    <div id="modal-conteudo2">
+                        <p><br>
+                            Amar é um deserto e seus temores<br>
+                            Vida que vai na sela dessas dores<br>
+                            Não sabe voltar, me dá teu calor<br><br>
+
+                            Vem me fazer feliz porque eu te amo<br>
+                            Você deságua em mim, e eu, oceano<br>
+                            Me esqueço que amar é quase uma dor<br>
+                            Só sei viver se for por você!<br><br>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- MUSICA 4 -->
+        <div class="modal" id="modal4" tabindex="-1">
+            <a href="#" class="modal_overlay" aria-label="Fechar"></a>
+            <div class="modal_content">
+                <a href="#playlist" class="modal_close" aria-label="Fechar">x</a>
+                <div id="modal-body">
+                    <h4>Sozinho</h4>
+                    <h6>Caetano Veloso</h6>
+                    <div id="modal-conteudo1">
+                        <p><br>
+                            Às vezes, no silêncio da noite<br>
+                            Eu fico imaginando nós dois<br>
+                            Eu fico ali sonhando acordado<br>
+                            Juntando o antes, o agora e o depois<br><br>
+
+                            Por que você me deixa tão solto?<br>
+                            Por que você não cola em mim?<br>
+                            Tô me sentindo muito sozinho<br><br>
+
+                            Não sou nem quero ser o seu dono<br>
+                            É que um carinho, às vezes, cai bem<br>
+                            Eu tenho os meus desejos e planos secretos<br>
+                            Só abro pra você, mais ninguém<br><br>
+
+                            Por que você me esquece e some?<br>       
+                        </p>                        
+                    </div>
+
+                    <div id="modal-conteudo2">
+                        <p><br>
+                            E se eu me interessar por alguém?<br>
+                            E se ela, de repente, me ganha?<br> 
+                            Quando a gente gosta<br>
+                            É claro que a gente cuida<br>
+                            Fala que me ama<br>
+                            Só que é da boca pra fora<br><br>
+
+                            Ou você me engana<br>
+                            Ou não está madura<br>
+                            Onde está você agora?<br><br>
+
+                            Quando a gente gosta
+                            É claro que a gente cuida
+                            Fala que me ama<br>
+                            Só que é da boca pra fora<br><br>
+
+                            Ou você me engana<br>
+                            Ou não está madura<br>
+                            Onde está você agora? 
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- MUSICA 5 -->
+        <div class="modal" id="modal5" tabindex="-1">
+            <a href="#" class="modal_overlay" aria-label="Fechar"></a>
+            <div class="modal_content">
+                <a href="#playlist" class="modal_close" aria-label="Fechar">x</a>
+                <div id="modal-body">
+                    <h4>La vie en rose</h4>
+                    <h6>Edith Piaf</h6>
+                    <div id="modal-conteudo1">
+                        <p><br>
+                            Des yeux qui font baisser les miens<br>
+                            Un rire qui se perd sur sa bouche<br>
+                            Voilà le portrait sans retouche<br>
+                            De l'homme auquel j'appartiens<br>
+
+                            Quand il me prend dans ses bras<br>
+                            Il me parle tout bas<br>
+                            Je vois la vie en rose<br>
+                            Il me dit des mots d'amour<br>
+                            Des mots de tous les jours<br>
+                            Et ça me fait quelque chose<br><br>
+
+                            Il est entré dans mon cœur<br>
+                            Une part de bonheur<br>
+                            Dont je connais la cause<br><br>
+
+                            C'est lui pour moi<br>
+                            Moi pour lui<br>
+                            Dans la vie<br>
+                            Il me l'a dit, l'a juré<br>
+                            Pour la vie<br><br>
+
+                            Et dès que je l'aperçois<br>
+                            Alors je sens en moi<br>
+                            Mon coeur qui bat<br>
+                        </p>                        
+                    </div>
+
+                    <div id="modal-conteudo2">
+                        <p><br>
+                            Des nuits d'amour à plus finir<br>
+                            Un grand bonheur qui prend sa place<br>
+                            Des ennuis des chagrins s'effacent<br>
+                            Heureux, heureux à mourir<br><br>
+
+                            Quand il me prend dans ses bras<br>
+                            Qu'il me parle tout bas<br>
+                            Je vois la vie en rose<br>
+                            Il me dit des mots d'amour<br>
+                            Des mots de tous les jours<br>
+                            Et ça me fait quelque chose<br><br>
+
+                            Il est entré dans mon cœur<br>
+                            Une part de bonheur<br>
+                            Donc je connais la cause<br><br>
+
+                            C'est toi pour moi<br>
+                            Moi pour toi<br>
+                            Dans la vie<br>
+                            Il me l'a dit, l'a juré<br>
+                            Pour la vie<br><br>
+
+                            Et dès que je l'aperçois<br>
+                            Alors je sens en moi<br>
+                            Mon coeur qui bat
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <p>Desenvolvido com carinho por Beatriz Campos</p>
+            <p>Copyright© 2020</p>
+        </footer>
         <script type="text/javascript" async src="https://tenor.com/embed.js"></script>
         <script>
             function tocar(){
@@ -135,3 +546,5 @@
         </script>
     </body>
 </html>
+
+    
