@@ -23,7 +23,7 @@
                     <a href="#sobre">SOBRE</a>
                 </li>
                 <li class="nav-item" id="item3">
-                    <a href="#apresentacao">APRESENTAÇÃO</a>
+                    <a href="#apresentacao">HISTÓRIA</a>
                 </li>
                 <li class="nav-item" id="item4">
                     <a href="#playlist">PLAYLIST</a>
@@ -101,20 +101,40 @@
         </div>
         <div id="apresentacao">
             <div class="container2">
-                <h1>Apresentação <span>Sarau</span></h1>
+                <h1>Histórinha com a <span>Música</span></h1>
                 <br><br>
                 <div id="div_video">
                     <video src="img/VID-20191221-WA0025.mp4" width=”350″ height=”100″ poster="img/teste.png" controls> </video>
                 </div>
 
                 <div id="text">
-                    <br>
-                    <h3>Escola RodrigueSom</h3><br>
-                    <p>Fui a primeira aluna da escola de música em que estudei, lá aprendi além de música e teoria musical a importância da persistência, paciência e dedicação</p>
-                    <br>
-                    <p>Estudei por dois anos e tive as melhores aulas com um professor e também maestro de uma orquestra chamado José Eduardo d'Alcantara. Sabia conduzir uma aula como qualquer maestro conduz uma orquestra.</p>
-                    <br>
-                    <p>Infelizmente em março/2020 a escola fechou por conta de não estar conseguindo se manter pois grande parte dos alunos saíram. Deixou saudades mas me agregaram e muito e os levarei no coração.</p>
+                    <div class="circulo-sobre" id="circuloSobre1" onclick="circuloInfo1()">2017</div>
+                    <!-- <div class="text-sobre" id="textSobre1">
+                        <h3>Teatro <i>A megera domada</i></h3><br>
+                        <p>Tudo começou em 2017 quando estava no 1° do ensino médio. Houve um projeto que envolveria alunos do 1° ao 3° ano, a peça era A Megera Domada de Shakespeare</p>
+                        <br>
+                        <p>Interpretei nessa peça o personagem Hortêncio, um caipira amigo de Petrucchio(protagonista junto de Catarina) que tocava alaúde. Então pensei: "Por que não entro com um violão e toco em tal cena?", então quis aprender uma música e tive aulas de violão com um vizinho, peguei um violão emprestado com um amigo e fiz as aulas</p>
+                        <br>
+                        <p>No final das contas, não apresentamos a peça e eu continuei com as aulas, e no final daquele ano comprei um violão.</p>
+                        </div> -->
+                    <div class="circulo-sobre" id="circuloSobre2" onclick="circuloInfo2()">2018</div>
+                    <!-- <div class="text-sobre" id="textSobre2" style="display:none;">
+                        <h3>Escola RodrigueSom</h3><br>
+                        <p>No ano seguinte entrei em uma escola que tinha acabado de ser inaugurada, e lá aprendi além de música e teoria musical a importância da persistência, paciência e dedicação</p>
+                        <br>
+                        <p>Estudei por dois anos e tive as melhores aulas com um professor e também maestro de uma orquestra chamado José Eduardo d'Alcantara. Sabia conduzir uma aula como qualquer maestro conduz uma orquestra.</p>
+                        <br>
+                        <p>Infelizmente em março/2020 a escola fechou por conta de não estar conseguindo se manter pois grande parte dos alunos saíram. Deixou saudades mas me agregaram e muito e os levarei no coração.</p>
+                        </div> -->
+                    <div class="circulo-sobre" id="circuloSobre3" onclick="circuloInfo3()">2019</div>
+                    <!-- <div class="text-sobre" id="textSobre3" style="display:none;">
+                        <h3>Daqui pra frente...</h3><br>
+                        <p>Em 2018 ainda ganhei um ukulelê tenor de aniversário, era algo que eu queria muito pois enxergo nesse instrumento uma sensação de paz, pureza e tranquilidade.</p>
+                        <br>
+                        <p>Hoje em dia possuo esses dois instrumentos, e eles me ajudaram em momentos difíceis e fizeram parte de momentos felizes, e me ajudaram a aumentar a auto confiança e autoestima.</p>
+                        <br>
+                        </div>  -->
+                        <div id="divMens"></div>                   
                 </div>
             </div>
         </div>     
@@ -253,8 +273,8 @@
                             <div class="top-cinco" id="top-cinco3">
                                 <div class="circulo" id="circulo3"></div>
                                 <div class="top-text" id="top-text3">
-                                    <h6>Hilsong</h6>
-                                    <p>Gospel</p>
+                                    <h6>Beethoven</h6>
+                                    <p>Clássica</p>
                                 </div>
                             </div>
                         </a>
@@ -668,10 +688,10 @@
         <div class="modal" id="modal7" tabindex="-1">
             <a href="#" class="modal_overlay" aria-label="Fechar"></a>
             <div class="modal_content">
-                <a href="#playlist" class="modal_close" aria-label="Fechar">x</a>
+                <a href="#playlist" class="modal_close" aria-label="Fechar" onclick="parar7()">x</a>
                 <div id="modal-body">
                     <h4>9°Sinfonia</h4>
-                    <h6>Beethoven/h6>
+                    <h6>Beethoven</h6>
                     <video src="img/Beethoven-9ª-Sinfonia-Ode-a-Alegria - 10Convert.com.mp4" width="100%" height="70%" poster="img/posterBet1.png" controls></video>
 
 <!-- <video src="img/VID-20191221-WA0025.mp4" width=”350″ height=”100″ poster="img/teste.png" controls> </video> -->
@@ -684,7 +704,7 @@
         <div class="modal" id="modal8" tabindex="-1">
             <a href="#" class="modal_overlay" aria-label="Fechar"></a>
             <div class="modal_content">
-                <a href="#playlist" class="modal_close" aria-label="Fechar">x</a>
+                <a href="#playlist" class="modal_close" aria-label="Fechar" onclick="parar8()">x</a>
                 <div id="modal-body">
                     <h4>Vivaldi</h4>
                     <h6>Beethoven</h6>
@@ -861,7 +881,7 @@
             <div class="modal_content">
                 <a href="#playlist" class="modal_close" aria-label="Fechar">x</a>
                 <div id="modal-body">
-                    <h4>Chitãonzinho & Xororó/h4>
+                    <h4>Chitãonzinho & Xororó</h4>
                     <br><br>
                     <p>
                         Essa dupla sertaneja marca o Brasil há 50 anos, é difícil não se emocionar com o sucesso <i>Evidências, No Rancho Fundo e Fogão de Lenha</i> e com outras músicas que essa dupla canta tão bem.<br><br>
@@ -888,113 +908,11 @@
         </div>
 
         <footer>
-            <p>Desenvolvido com carinho por Beatriz Campos</p>
+            <p>Desenvolvido com carinho por Beatriz Campos</p><br>
             <p>Copyright © 2020</p>
         </footer>
         <script type="text/javascript" async src="https://tenor.com/embed.js"></script>
-        
-        <script>
-            var myAudio= document.getElementById("myAudio");
-            var musica1= document.getElementById("musica1");
-            var musica2= document.getElementById("musica2");
-            var musica3= document.getElementById("musica3");
-            var musica4= document.getElementById("musica4");
-            var musica5= document.getElementById("musica5");
-            var musica6= document.getElementById("musica6");
-            var musica9= document.getElementById("musica9");
-            var musica10= document.getElementById("musica10");
-            var isPlaying = false;
-
-            function tocar() {
-                if (isPlaying) {
-                    myAudio.pause()
-                } 
-                else {
-                    myAudio.play();
-                }
-                };
-                myAudio.onplaying = function() {
-                isPlaying = true;
-                };
-                myAudio.onpause = function() {
-                isPlaying = false;
-            };
-            // musica 1
-            function tocar1(){
-                musica1.play();
-            }
-            
-            function parar1() {
-                musica1.currentTime = 0;
-                musica1.pause()
-            }
-
-            //    musica 2 
-            function tocar2(){
-                musica2.play();
-            }
-            
-            function parar2() {
-                musica2.currentTime = 0;
-                musica2.pause()
-            }
-
-            //    musica 3 
-            function tocar3(){
-                musica3.play();
-            }
-            
-            function parar3() {
-                musica3.currentTime = 0;
-                musica3.pause()
-            }
-             //    musica 4
-             function tocar4(){
-                musica4.play();
-            }
-            
-            function parar4() {
-                musica4.currentTime = 0;
-                musica4.pause()
-            }
-             //    musica 5 
-             function tocar5(){
-                musica5.play();
-            }
-            
-            function parar5() {
-                musica5.currentTime = 0;
-                musica5.pause()
-            }
-             //    musica 6 
-             function tocar6(){
-                musica6.play();
-            }
-            
-            function parar6() {
-                musica6.currentTime = 0;
-                musica6.pause()
-            }
-             //    musica 9 
-             function tocar9(){
-                musica9.play();
-            }
-            
-            function parar9() {
-                musica9.currentTime = 0;
-                musica9.pause()
-            }
-
-             //    musica 10 
-             function tocar10(){
-                musica10.play();
-            }
-            
-            function parar10() {
-                musica10.currentTime = 0;
-                musica10.pause()
-            }
-        </script>
+        <script src="js/main.js"></script>
     </body>
 </html>
 

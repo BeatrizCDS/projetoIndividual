@@ -224,29 +224,71 @@ span{
 }
 #div_video{
     height:100%;
-    width:60%;
+    width:55%;
     float: left;
 }
 #text{
     height:100%;
-    width:39%;
+    width:45%;
     float: left; 
 }
-.container2{
-    height:90%;
-    width:85%;
-    /* background-color: black; */
+.divMens{
+    height:67%;
+    width:97%;
+    margin-left:3%;
 }
-h3{
+.divMens h3{
     color:#ce4257;
-    font-size: 22px;
-    -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: #ce4257;
+    font-size: 20px;
 }
-p{
-    font-size: 17px;
+.divMens p{
+    font-size: 15px;
     color:#2e2d2d;
 }
+.circulo-sobre{
+    height:38%;
+    width:28%;
+    border-radius: 50%;
+    float:left;
+    color:#fcfcfb;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    font-size:25px;
+    font-family: cursive;
+}
+#circuloSobre1{
+    margin-left: 3%;
+    background-color: #ce4257;
+}
+#circuloSobre1:hover{
+    background-color: #aa2b3e;
+    color:#ebecec;
+}
+#circuloSobre2{
+    margin-left: 3%;
+    background-color: #da6576;
+}
+#circuloSobre2:hover{
+    background-color: #be5363;
+    color:#f5fcfb;
+}
+#circuloSobre3{
+    margin-left: 3%;
+    background-color: #ec93a1;
+    margin-bottom: 3%;
+}
+#circuloSobre3:hover{
+    background-color: #d88b97;
+    color:#f5fcfb;
+}
+.container2{
+    height:70%;
+    width:85%;
+}
+
 #playlist{
     height:500px;
     width:100%;
@@ -372,7 +414,7 @@ p{
     background-size: cover;
 }
 #circulo3{
-    background: url(../img/Hillsong.png)center no-repeat;
+    background: url(../img/beethoven.jpg)center no-repeat;
     background-size: cover;
 }
 #circulo4{
@@ -397,7 +439,7 @@ p{
     color:rgb(87,87,87);
 }
 footer{
-    margin-top:8%;
+    margin-top:4%;
     width:100%;
     height:100px;
     background-color: #202020;
