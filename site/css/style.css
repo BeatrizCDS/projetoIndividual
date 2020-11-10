@@ -309,20 +309,6 @@ span{
 #play1, #play2{ 
     margin-right:4%;
 }
-/* .btn-play{
-    border:none;
-    border-radius:4px;
-    background-color:#2e2d2d;
-    color:white;
-    height:100%;
-    width:10%;
-}
-#group-btn{
-    width:100%;
-    height:10%;
-    display: flex;
-    justify-content: space-between;
-} */
 .btn-play:hover{
     background-color:#202020;
     font-size:17px;
@@ -377,21 +363,6 @@ span{
     background-color: #f4f4f4;
     border-radius: 3px;
 }
-/* #top-cinco1{
-    background-color: pink;
-}
-#top-cinco2{
-    background-color: plum;
-}
-#top-cinco3{
-    background-color: powderblue;
-}
-#top-cinco4{
-    background-color: lightseagreen;
-}
-#top-cinco5{
-    background-color: lightsalmon;
-} */
 .circulo{
     width:25%;
     height:80%;
@@ -537,4 +508,102 @@ footer p{
     padding-left: 5%;
     width:44%;
     float:left;
+}
+
+/* LOGIN */
+#containerLogin{
+    height:100%;
+    width:100%;
+    position: absolute;
+    background-color: #f4f4f4;
+}
+.boxLogin{
+    height:100%;
+    float: left;
+    position: relative;
+    z-index: 22;
+}
+#divLogin1{
+    background-color: #f4f4f4;
+    width:45%;
+}
+#divLogin2{
+    background:linear-gradient(#812633,#ce4257);
+    width:55%;
+}
+.boxLogin{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.boxLogin h2{
+    font-family: cursive;
+    font-size: 35px;
+    color:#ce4257;
+    margin-bottom: 4%;
+}
+.boxLogin input{
+    height:8%;
+    width:60%;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 2px solid grey;
+    font-size: 17px;
+    background-color: transparent;
+    margin-bottom: 3%;
+    color:#2e2d2d;
+}
+.boxLogin p{
+    color:#2e2d2d;
+}
+#entra{
+    cursor:pointer;
+    border:none;
+    color:white;
+}
+
+#navegacaoProfile{
+    width:90%;
+    height: 100%;
+    display:flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+.btnLogin{
+    background: linear-gradient(#ce4257, #d46777);
+    border: 1px solid #fcfcfb;
+    font-size: 18px;
+    height:8%;
+    width:60%;
+    border-radius: 30px;
+    margin-top: 3%;
+    cursor:pointer;
+}
+.btnLogin:hover{
+    background: linear-gradient(#b1374a, #dd7584);
+}
+
+/* profile */
+#btnsair{
+   background-color: #ce4257;
+   border:none;
+   border-radius:3px;
+   border:4px solid #ce4257;
+   color:white;
+}
+
+#addMusica{
+    margin-top: 10%;
+    margin-left: 90%;
+    color:#ce4257;
+    border:1px solid #ce4257;
+    border-radius:30px;
+    background-color: white;
+}
+#addMusica:hover{
+    background-color: #ce4257;
+    color:white;
 }

@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/BC2.png">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>BCSantos</title>
+</head>
+
+<body>
+    <div id="menu">
+        <div id="logo"></div>
+        <div id="navegacaoProfile">
+            
+                
+                    <button id=addMusica>+Música</button>
+                
+              
+            <a href="index.html">
+                <button id="btnsair">SAIR</button>
+            </a>
+                
+        </div>
+    </div>
+    <div id="playlist">
+        <div id="container3">
+            <h1>Mais<span> Ouvidas</span></h1>
+            <br><br><br>
+
+            <div class="play" id="play1">
+                <a href="#modal1">
+                    <div class="top-number" id="top-number1" onclick="tocar1()">
+                        <h4>1</h4>
+                        <h6 class="top_txt_primary">Love of my life</h6>
+                        <p class="top_txt_secondary">Queen</p>
+                    </div>
+                </a>
+                <audio id="musica1" src="musica/love-of-my-life-lyrics.mp3" preload="auto">
+                </audio>
+
+                <a href="#modal2">
+                    <div class="top-number" id="top-number2" onclick="tocar2()">
+                        <h4>2</h4>
+                        <h6 class="top_txt_primary">Rancho Fundo</h6>
+                        <p class="top_txt_secondary">Chitãozinho & Xororó</p>
+                    </div>
+                </a>
+                <audio id="musica2" src="musica/no-rancho-fundo.mp3" preload="auto">
+                </audio>
+
+                <a href="#modal3">
+                    <div class="top-number" id="top-number3" onclick="tocar3()">
+                        <h4>3</h4>
+                        <h6 class="top_txt_primary">Oceano</h6>
+                        <p class="top_txt_secondary">Djavan</p>
+                    </div>
+                </a>
+                <audio id="musica3" src="musica/10convert.com_Djavan-Oceano-Ao-Vivo_-smnxqSTv4Y.mp3" preload="auto">
+                </audio>
+
+                <a href="#modal4">
+                    <div class="top-number" id="top-number4" onclick="tocar4()">
+                        <h4>4</h4>
+                        <h6 class="top_txt_primary">Sozinho</h6>
+                        <p class="top_txt_secondary">Caetano veloso</p>
+                    </div>
+                </a>
+                <audio id="musica4" src="musica/10convert.com_Sozinho-Caetano-Veloso-estudio_sGC8g0DJ0_E.mp3"
+                    preload="auto">
+                </audio>
+
+                <a href="#modal5">
+                    <div class="top-number" id="top-number5" onclick="tocar5()">
+                        <h4>5</h4>
+                        <h6 class="top_txt_primary">La vie en rose</h6>
+                        <p class="top_txt_secondary">Edith Piaf</p>
+                    </div>
+                </a>
+                <audio id="musica5"
+                    src="musica/10convert.com_Edith-Piaf-La-vie-en-rose-French-and-English-Lyric_kN1WoneA1Kw.mp3"
+                    preload="auto">
+                </audio>
+            </div>
+
+            <div class="play" id="play2">
+                <a href="#modal6">
+                    <div class="top-number" id="top-number6" onclick="tocar6()">
+                        <h4>6</h4>
+                        <h6 class="top_txt_primary">Don't stop me now</h6>
+                        <p class="top_txt_secondary">Queen</p>
+                    </div>
+                </a>
+                <audio id="musica6" src="musica/10convert.com_Queen-Dont-Stop-Me-Now-Lyrics_KKny_ia8Fvo.mp3"
+                    preload="auto">
+                </audio>
+
+                <a href="#modal7">
+                    <div class="top-number" id="top-number7">
+                        <h4>7</h4>
+                        <h6 class="top_txt_primary">9° sinfonia</h6>
+                        <p class="top_txt_secondary">Beethoven</p>
+                    </div>
+                </a>
+                <a href="#modal8">
+                    <div class="top-number" id="top-number8">
+                        <h4>8</h4>
+                        <h6 class="top_txt_primary">Vivaldi</h6>
+                        <p class="top_txt_secondary">Beethoven</p>
+                    </div>
+                </a>
+                <a href="#modal9">
+                    <div class="top-number" id="top-number9" onclick="tocar9()">
+                        <h4>9</h4>
+                        <h6 class="top_txt_primary">A whole new world</h6>
+                        <p class="top_txt_secondary">Alladin</p>
+                    </div>
+                </a>
+                <audio id="musica9"
+                    src="musica/10convert.com_A-Whole-New-World-Aladdin-1080-HD-with-lyrics_aeDYx7Tkc7I.mp3"
+                    preload="auto">
+                </audio>
+
+                <a href="#modal10">
+                    <div class="top-number" id="top-number10" onclick="tocar10()">
+                        <h4>10</h4>
+                        <h6 class="top_txt_primary">When you wish upon a star</h6>
+                        <p class="top_txt_secondary">Pinocchio</p>
+                    </div>
+                </a>
+                <audio id="musica10"
+                    src="musica/10convert.com_When-You-Wish-Upon-A-Star-Pinocchio-lyrics_zXEy9hyIjh8.mp3"
+                    preload="auto">
+                </audio>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>Desenvolvido com carinho por Beatriz Campos</p><br>
+        <p>Copyright © 2020</p>
+    </footer>
+    <script type="text/javascript" async src="https://tenor.com/embed.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
