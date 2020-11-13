@@ -146,3 +146,31 @@ function circuloInfo3() {
     divMens.style = "display:block;"
     divMens.style = "margin-left:3%;"
 }
+var nomeU = document.getElementById("inpCadastro1")
+var emailU = document.getElementById("inpCadastro2")
+var emailConfU = document.getElementById("inpCadastro3")
+var senhaU = document.getElementById("inpCadastro4")
+var senhaConfU = document.getElementById("inpCadastro5");
+// var musica10 = document.getElementById("musica10");
+
+function cadastrar(){
+
+
+    if(emailU!=emailConfU){
+        alert("O email não confere com o digitado no primeiro campo");
+    }
+    else if(senhaU!=senhaConfU){
+        alert("A senha não confere com a digitada no campo acima");
+    }
+        else if(emailU==emailConfU && senhaU==senhaConfU){
+         
+        }
+}
+function logar(){
+    if(inpLogin1.value==emailU && inpLogin2.value==senhaU){
+        alert("ok");
+    }
+    else{
+        alert("Dados não constam no nosso banco");
+    }
+}

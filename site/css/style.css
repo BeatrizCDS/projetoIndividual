@@ -290,7 +290,7 @@ span{
 }
 
 #playlist{
-    height:500px;
+    height:509px;
     width:100%;
     justify-content: center;
     flex-direction: row;
@@ -298,8 +298,75 @@ span{
     align-items: center;
 }
 #container3{
-    height:100%;
+    height:80%;
     width:80%;
+    margin-top:10%;
+}
+#circulo-user{
+    height:18%;
+    width:7%;
+    background-color: #b1374a;
+    border-radius: 50%;
+    float:left;
+    background-size: cover;
+    align-items: center;
+    flex-direction: row;
+    display: flex;
+    justify-content: center;
+    color:white;
+    font-size: 25px;
+    font-weight: 400;
+}
+#container3 h1{
+    margin-bottom: 1%;
+    text-align:left;
+    font-size:28px;
+    color:#2e2d2d;
+    margin-top:1.5%;
+}
+#container3 h3{
+    font-size:21px;
+}
+#container3 h5{
+    font-size:23px;
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+#container3 #item-lista1{
+    margin-left:0;
+}
+.item-lista{
+    height:15%;
+    width:50%;
+}
+/* #circulo-item1{
+    background: url(../img/clave-de-sol.png) center no-repeat;
+    background-size: cover;
+} */
+.item-lista:hover{
+    background: #f4f4f4;
+}
+.circulo-item{
+    height:75%;
+    width:9%;
+    background-color: grey;
+    border-radius: 50%;
+    float:left;
+
+    align-items: center;
+    flex-direction: row;
+    display: flex;
+    justify-content: center;
+}
+#container3 p{
+    float: left;
+    margin-top: 3%;
+    margin-left: 3%;
+    color:#2e2d2d;
+}
+#container3 a{
+    text-decoration: none;
+    border:none;
 }
 .play{
     height:85%;
@@ -606,4 +673,71 @@ footer p{
 #addMusica:hover{
     background-color: #ce4257;
     color:white;
+}
+
+/* CADASTRO */
+#containerCadastro{
+    height:100%;
+    width:100%;
+    position: absolute;
+    background-color: #f4f4f4;
+}
+.boxCadastro{
+    height:100%;
+    float: left;
+    position: relative;
+    z-index: 22;
+}
+#divCadastro1{
+    background-color: #f4f4f4;
+    width:45%;
+}
+#divCadastro2{
+    background:linear-gradient(#812633,#ce4257);
+    width:55%;
+}
+.boxCadastro{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.boxCadastro h2{
+    font-family: cursive;
+    font-size: 35px;
+    color:#ce4257;
+    margin-bottom: 4%;
+}
+.boxCadastro input{
+    height:8%;
+    width:60%;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 2px solid grey;
+    font-size: 17px;
+    background-color: transparent;
+    margin-bottom: 3%;
+    color:#2e2d2d;
+}
+.boxCadastro p{
+    color:#2e2d2d;
+}
+#entra{
+    cursor:pointer;
+    border:none;
+    color:white;
+}
+.btnCadastro{
+    background: linear-gradient(#ce4257, #d46777);
+    border: 1px solid #fcfcfb;
+    font-size: 18px;
+    height:8%;
+    width:60%;
+    border-radius: 30px;
+    margin-top: 3%;
+    cursor:pointer;
+}
+.btnCadastro:hover{
+    background: linear-gradient(#b1374a, #dd7584);
 }
