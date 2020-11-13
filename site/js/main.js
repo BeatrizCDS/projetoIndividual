@@ -174,3 +174,7 @@ function logar(){
         alert("Dados não constam no nosso banco");
     }
 }
+// function salvar(){
+//     circuloUser.src="../bbmalandro.png"
+// }
+
