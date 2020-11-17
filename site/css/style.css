@@ -296,16 +296,39 @@ span{
 
 #playlist{
     height:509px;
-    width:100%;
+    width:99%;
     justify-content: center;
     flex-direction: row;
     display:flex;
     align-items: center;
 }
-#container3{
+#container-profile{
     height:79%;
     width:80%;
     margin-top:10%;
+}
+#container-profile a{
+    text-decoration:none;
+    border:none;
+}
+#container-profile h1{
+    margin-bottom: 1%;
+    text-align:left;
+    font-size:28px;
+    color:#2e2d2d;
+    margin-top:1.5%;
+}
+#container-profile h3{
+    font-size:21px;
+}
+#container-profile h5{
+    font-size:23px;
+
+}
+#container3{
+    border-top:1px solid #f4f4f4;
+    height:100%;
+    width:80%;
 }
 #circuloUser{
     height:18%;
@@ -324,18 +347,21 @@ span{
     background-size: cover;
 }
 .textMsc{
-    width:50%;
+    width:40%;
+    margin-left: 2%;
+    align-items: flex-start;
+    flex-direction: column;
+    display: flex;
+    justify-content: left;
 }
 .pcerto{
     margin-top:5%;
-    margin-left:3%;
+    margin-left: 2%;
 }
-.perrado{
-    margin-top:3%;
-    margin-left:2%;
-}
+
 .textMsc h6{
     font-size:13px;
+    margin-left:2%;
 }
 #container3 h1{
     margin-bottom: 1%;
@@ -523,6 +549,10 @@ footer p{
 .modal {
     display: none;
 }
+.modal a{
+    text-decoration:none;
+    border:none;
+}
 .modal:target {
     display: flex;
 }
@@ -570,7 +600,7 @@ footer p{
 }
 .modal_content-mus {
     width:25%;
-    height:35%;
+    height:25%;
     position: relative;
     background-color: white;
     padding: 2rem;
@@ -586,7 +616,10 @@ footer p{
     display: inline-block;
     font-size:24px;
 }
-
+.modal_close a{
+    text-decoration: none;
+    border:none;
+}
 #modal-body{
     border-top: 1px solid #f4f4f4;
     height:80%;
@@ -682,6 +715,10 @@ footer p{
     flex-direction: row;
     justify-content: flex-end;
 }
+#navegacaoProfile a{
+    text-decoration:none;
+    border:none;
+}
 .btnLogin{
     background: linear-gradient(#ce4257, #d46777);
     border: 1px solid #fcfcfb;
@@ -703,6 +740,11 @@ footer p{
    border-radius:3px;
    border:4px solid #ce4257;
    color:white;
+}
+#btnsair a{
+    text-decoration:none;
+    border:none;
+    line:none;
 }
 
 #addMusica{
@@ -783,4 +825,14 @@ footer p{
 }
 .btnCadastro:hover{
     background: linear-gradient(#b1374a, #dd7584);
+}
+#btnMus{
+    width:45%;
+    border:none;
+    border-radius:3px;
+    background-color:#ce4257;
+    color:white;
+    margin-top:5%;
+    float:right;
+    height:30px;
 }

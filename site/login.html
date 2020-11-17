@@ -16,17 +16,60 @@
 
             <div class="boxLogin" id="divLogin1">
                 <h2>LOGIN</h2>
-                <input type="email" class="inpLogin" id="inpLogin1" placeholder="exemplo@gmail.com" required>
+                <!-- <form id="form_login" method="post" onsubmit="return entrar()"> -->
+                    <input type="email" class="inpLogin" id="inpLogin1" name="login" placeholder="exemplo@gmail.com" required>
 
-                <input type="password" class="inpLogin" id="inpLogin2" placeholder="Senha" required>
+                    <input type="password" class="inpLogin" id="inpLogin2" name="senha" placeholder="Senha" required>
+                <!-- </form> -->
                 <p>Não possui cadastro?<a href="cadastro.html">Cadastre-se</a></p>
                 
-                    <button onclick="logar()" class="btnLogin" id="btnLogin1">Entrar
-                       
-                    </button>
+                    <button onclick="logar()" class="btnLogin" id="btnLogin1">Entrar</button>
                 
                 </div>
         </div>
         <script src="js/main.js"></script>
     </body>
 </html>
+
+<script>
+// function entrar() {
+//     aguardar();
+//     var formulario = new URLSearchParams(new FormData(form_login));
+//     fetch("/usuarios/autenticar", {
+//         method: "POST",
+//         body: formulario
+//     }).then(resposta => {
+        
+//         if (resposta.ok) {
+
+//             resposta.json().then(json => {
+
+//                 sessionStorage.login_usuario_meuapp = json.login;
+//                 sessionStorage.nome_usuario_meuapp = json.nome;
+        
+//             });
+
+//         } else {
+
+//             console.log('Erro de login!');
+
+//             resposta.text().then(texto => {
+//                 console.error(texto);
+//                 finalizar_aguardar(texto);
+//             });
+//         }
+//     });
+
+//     return false;
+// }
+
+// function aguardar() {
+//     btn_entrar.disabled = true;
+   
+// }
+
+// function finalizar_aguardar(resposta) {
+//     btn_entrar.disabled = false;
+//     img_aguarde.style.display= 'none';
+// }
+// </script>

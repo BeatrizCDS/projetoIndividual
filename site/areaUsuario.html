@@ -20,40 +20,39 @@
         </div>
     </div>
     <div id="playlist">
-        <div id="container3">
+        <div id="container-profile">
             <a href="#modalfoto">
                 <div id="circuloUser">B</div>
             </a>    
                 <h1>Beatriz Campos</h1>
-            
             <br><br>
             <h5>Minhas listas</h5>
             <hr>
             <a onclick="verMsc()">
                 <div class="item-lista" id="item-lista1">
                     <div class="circulo-item" id="circulo-item1"><img src="img/coracaoicon.png"></div>
-                   <div class="textMsc">
-                    <p class="pcerto">Minhas músicas</p><br><br>
-                    <h6 id="pmagica"></h6>
-                   </div>
+                    <div class="textMsc">
+                        <p class="pcerto">Minhas músicas</p>
+                        <h6 id="pmagica"></h6>
+                    </div>
                 </div>
             </a>
             <a onclick="verMsc2()">
                 <div class="item-lista" id="item-lista2">
                     <div class="circulo-item" id="circulo-item2"><img src="img/estrelaicon.png"></div>
-                    <div clas="textMsc">
-                    <p class="perrado">Músicas favoritas</p><br><br>
-                    <h6 id="pmagica2"></h6>
+                    <div class="textMsc">
+                        <p class="pcerto">Músicas favoritas</p>
+                        <h6 id="pmagica2"></h6>
                     </div>
                 </div>
             </a>
            <a href="#modalMus">
             <div class="item-lista" id="item-lista3">
                 <div class="circulo-item" id="circulo-item3"><img src="img/maisicon.png"></div>
-               <div class="textMsc">
-                <p class="pcerto">Nova lista</p>
-                <h6 id="pmagica3"></h6><br><br>
-               </div>
+                <div class="textMsc">
+                    <p class="pcerto">Nova lista</p>
+                    <h6 id="pmagica3"></h6>
+                </div>
             </div>
            </a>
 
@@ -85,16 +84,6 @@
                 Favorito <input type="checkbox" id="inpFav" onchange="musFav()">
                 <div id="resul1"></div>
                 <button onclick="inserir()" id="btnMus">Inserir</button>
-            </div>
-        </div>
-    </div>
-
-    <div class="modal" id="modalFav" tabindex="-1">
-        <a href="#" class="modal_overlay" aria-label="Fechar"></a>
-        <div class="modal_content-mus">
-            <a href="#playlist" class="modal_close" aria-label="Fechar">x</a>
-            <div id="modal-body">
-            
             </div>
         </div>
     </div>
