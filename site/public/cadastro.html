@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/BC2.png">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>BCSantos</title>
+</head>
+
+<body>
+    <div id="containerCadastro">
+        <div class="boxCadastro" id="divCadastro2">
+            <img src="img/BC4.png" alt="logo">
+        </div>
+
+        <div class="boxCadastro" id="divCadastro1">
+            <h2>Cadastro</h2>
+            <form id="form_cadastro" method="post" onsubmit="return cadastrar()">
+                <input type="text" class="inpCadastro" id="inpCadastro1" name="nome" placeholder="nome" required>
+
+                <input type="text" class="inpCadastro" id="inpCadastro2" name="login" placeholder="Email" required>
+                <input type="text" class="inpCadastro" id="inpCadastro3" placeholder="Confirme seu email" required>
+
+
+                <input type="password" class="inpCadastro" id="inpCadastro4" name="senha" placeholder="senha" required>
+                <input type="password" class="inpCadastro" id="inpCadastro5" placeholder="Confirme sua senha" required>
+
+                <input type="submit" id="btn_entrar" value="Cadastrar" class="btn">
+            </form>
+            <a href="login.html">Já tenho uma conta</a>
+            <!-- <button onclick="cadastro()" class="btnCadastro" id="btnCadastro1">Cadastrar</button> -->
+            <div id="div_erro" style="background-color: white; color: maroon; display: none;">
+                Erro no cadastro
+            </div>
+        </div>
+    </div>
+    </div>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
+<script>
+
+    function cadastrar() {
+        // aguardar();
+        var formulario = new URLSearchParams(new FormData(form_cadastro));
+        fetch("/usuarios/cadastrar", {
+            method: "POST",
+            body: formulario
+        }).then(function (response) {
+
+            if (response.ok) {
+
+                window.location.href = 'login.html';
+
+            } else {
+
+                console.log('Erro de cadastro!');
+                response.text().then(function (resposta) {
+                    div_erro.innerHTML = resposta;
+                });
+                // finalizar_aguardar();
+            }
+        });
+
+        return false;
+    }
+
+    // function aguardar() {
+    //     btn_entrar.disabled = true;
+    //     img_aguarde.style.display='block';
+    //     div_erro.style.display='none';
+    // }
+
+    // function finalizar_aguardar() {
+    //     btn_entrar.disabled = false;
+    //     img_aguarde.style.display='none';
+    //     div_erro.style.display='block';
+    // }
+
+</script>
