@@ -15,7 +15,6 @@ a{
     background-color: #f4f4f4;
     position: fixed;
     z-index: 5;
-    /* border-bottom: 2px solid #129fe8; */
 }
 #navegacao{
     width:90%;
@@ -291,7 +290,7 @@ span{
 }
 
 #playlist{
-    height:350px;
+    height:450px;
     width:99%;
     justify-content: center;
     flex-direction: row;
@@ -326,22 +325,6 @@ span{
     height:100%;
     width:80%;
 }
-#circuloUser{
-    height:18%;
-    width:7%;
-    background-color: #b1374a;
-    border-radius: 50%;
-    float:left;
-    background-size: cover;
-    align-items: center;
-    flex-direction: row;
-    display: flex;
-    justify-content: center;
-    color:white;
-    font-size: 25px;
-    font-weight: 400;
-    background-size: cover;
-}
 .textMsc{
     width:40%;
     margin-left: 2%;
@@ -351,7 +334,7 @@ span{
     justify-content: left;
 }
 .pcerto{
-    margin-top:5%;
+    margin-top:8%;
     margin-left: 2%;
 }
 
@@ -381,20 +364,15 @@ span{
     height:20%;
     width:50%;
 }
-/* #circulo-item1{
-    background: url(../img/clave-de-sol.png) center no-repeat;
-    background-size: cover;
-} */
 .item-lista:hover{
     background: #f4f4f4;
 }
 .circulo-item{
     height:75%;
-    width:9%;
+    width:11%;
     background-color: grey;
     border-radius: 50%;
     float:left;
-
     align-items: center;
     flex-direction: row;
     display: flex;
@@ -836,12 +814,6 @@ footer p{
     float:right;
     height:30px;
 }
-#teste-menu{
-    height:100px;
-    width:100%;
-    background:rgb(206,66,87);
-    background:linear-gradient(87deg,rgba(206,66,87,1)0%,rgba(248,136,153,1)97%);
-}
 #form_cadastro{
     display:flex;
     flex-direction:column;
@@ -858,27 +830,32 @@ footer p{
     height:40%;
     width:100%;
 }
-#teste-submenu{
-    height:200px;
-    width:100%;
-    background:url(../img/capa.jpg)center no-repeat;
-    background-size:cover;
-}
 #banner-profile{
     width:100%;
     height:300px;
     background:url(../img/capa1.gif) center no-repeat;
     background-size:cover;
 }
-
 #fotoProfile{
     height:20%;
     width:10%;
     border-radius:50%;
-    background-color:black;
+    background:url(../img/userImage.png)center no-repeat;
+    background-size:cover;
     border:4px solid white;
     position:absolute;
     top: 35%;
-    left: 45%;
+    left: 44.5%;
     translate: transform (-50%, -50%);
+}
+.usuario{
+    width:100%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    flex-direction:row;
+    font-weight:700;
+}
+#b_usuario{
+    font-size:24px;
 }

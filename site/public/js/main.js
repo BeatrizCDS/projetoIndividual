@@ -166,15 +166,3 @@ function cadastrar(){
          
         }
 }
-function logar(){
-    if(inpLogin1.value==emailU && inpLogin2.value==senhaU){
-        alert("ok");
-    }
-    else{
-        alert("Dados não constam no nosso banco");
-    }
-}
-// function salvar(){
-//     circuloUser.src="../bbmalandro.png"
-// }
-
